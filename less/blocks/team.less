@@ -1,0 +1,146 @@
+.team {
+  padding-top: 88px;
+  padding-bottom: 70px;
+  color: #fff;
+  background-image: 
+    url(../img/bg-5.jpg),
+    linear-gradient(45deg, #a3c5cc, #a3c5cc 60%, #d1e7ec 61.5%, #d1e7ec);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.team__slider {
+  width: 940px;
+  margin-top: 90px;
+  padding-bottom: 48px;
+  color: #696f7b;
+}
+
+.team__slide {
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.team__img {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.team__wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  p {
+    margin: 0;
+  }
+}
+
+.team__block {
+  width: 100%;
+  margin-bottom: 35px;
+  padding: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #f7f7f7;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0 rgba(247,247,247,0.62);
+  
+  p {
+    margin-bottom: 0;
+    color: #696f7b;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .team__name {
+    color: #494949;
+    line-height: 15px;
+  }
+
+  .team__position {
+    color: #696f7b;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+.team__contacts {
+  color: @green;
+  font-size: 11px;
+  line-height: 15px;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.team__deco2,
+.team__deco {
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon-deco.png);
+    background-repeat: no-repeat;
+  }
+  
+  &::before {
+    top: -45px;
+    left: 15px;
+  }
+  
+  &::after {
+    bottom: 45px;
+    left: 15px;
+    transform: rotate(-90deg);
+  }
+}
+
+.team__deco2 {
+  &::before {
+    right: 15px;
+    left: auto;
+    transform: rotate(90deg);
+  }
+  
+  &::after {
+    right: 15px;
+    left: auto;
+    transform: rotate(180deg);
+  }
+}
+
+.team__pagination {
+  bottom: 0;
+  
+  .swiper-pagination-bullet {
+    outline: none;
+    width: 6px;
+    height: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: #fff;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background-color: @green;
+  }
+}
