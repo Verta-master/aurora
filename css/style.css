@@ -831,7 +831,7 @@ button {
   background-image: url(../img/bg-5.jpg), linear-gradient(35deg, #a3c5cc, #a3c5cc 60%, #d1e7ec 61.5%, #d1e7ec);
   background-repeat: no-repeat;
   background-position: center top, center bottom;
-  background-size: auto 455px, 100% 100%;
+  background-size: 100% 455px, 100% 100%;
 }
 .team .title {
   margin-bottom: 20px;
@@ -1321,6 +1321,9 @@ button {
 @media (max-width: 1100px) {
   .wrapper {
     width: 100%;
+  }
+  .team {
+    background-size: auto 455px, 100% 100%;
   }
   .team__deco::before {
     left: 0;
